@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit post</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <h1 class="pge">Edit your post</h1>
+    <h2 class="pge">post id: <%=post.id%></h2>
+    <h3 class="pge">post username: <%=post.username%></h3>
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+        <textarea rows="10" cols= "20"placeholder="write your content" name="content"></textarea>
+        <button <a href="http://localhost:8080/posts/<%=post.id%>">submit</a></button>
+    </form>
+</body>
+</html>

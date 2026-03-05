@@ -1,0 +1,31 @@
+body{
+    background-color: aqua;
+    background-image: url("sp.jpg");
+}
+.cont{
+    font-size:30px;
+    font-weight: 800;
+    color: brown;
+}
+.post{
+    background-color: rgb(233, 228, 215);
+}
+
+.user{
+    font-style: italic;
+    color: darkorchid;
+}
+.create{
+    background-color:red;
+    font-size:30px;
+    font-weight: 400;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.head{
+    color: rgb(228, 69, 20);
+    background-color: darkgreen;
+}
+.pge{
+    background-color: darkgreen;
+}
