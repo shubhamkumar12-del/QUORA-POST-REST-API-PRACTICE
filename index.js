@@ -8,9 +8,10 @@ const methodoverride = require("method-override");
 app.use(express.urlencoded({extended:true}));
 app.use(methodoverride("_method"));
 
-app.set("view enjine","ejs");
+app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(express.static(path.join(__dirname,"public")));
+app.use(express.json());
 
 
 let posts = [
@@ -72,6 +73,7 @@ app.delete("/posts/:id",(req,res)=>{
      posts = posts.filter((p) => id !==p.id);
      res.redirect("/posts");
 });
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, (req,res) =>{
     console.log("listening server");
